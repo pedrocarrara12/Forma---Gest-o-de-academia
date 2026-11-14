@@ -1,0 +1,58 @@
+.shell,
+.shell main,
+.panel,
+.table-scroll {
+  min-width: 0;
+  max-width: 100%;
+}
+.table-scroll {
+  width: 100%;
+  position: relative;
+}
+.search {
+  flex-direction: row;
+}
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: clip;
+}
+.notice {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  max-width: calc(100vw - 40px);
+  background: #183e35;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 6px 24px #183e3533;
+}
+.notice button {
+  padding: 6px 10px;
+}
+.session-status {
+  padding: 40px;
+}
+@media (max-width: 700px) {
+  .sidebar .sidebar-footer {
+    display: flex;
+    margin-top: 16px;
+  }
+  .sidebar-footer .icon-button {
+    margin-left: auto;
+  }
+}
+@media (max-width: 700px) {
+  .shell main {
+    width: 100%;
+  }
+  .table-scroll {
+    overflow-x: auto;
+  }
+}
